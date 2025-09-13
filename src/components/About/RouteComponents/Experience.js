@@ -87,6 +87,7 @@ const Experience = () => {
                 </ul>
               </div>
 
+              {/* 
               <div className="experience__box">
                 <h2>Dubai Wheels</h2>
 
@@ -181,7 +182,7 @@ const Experience = () => {
                     <span>Demonstrated ability to apply modern AI tools for practical solutions</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
