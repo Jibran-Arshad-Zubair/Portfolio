@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import '../../styles/Hero/Hero.scss';
+import "../../styles/Hero/Hero.scss";
 
-import Myself from '../../assets/images/My Pic.jpg';
+import Myself from "../../assets/images/My Pic.jpg";
 
 const Hero = () => {
   useEffect(() => {
-    const alphbets = document.getElementsByClassName('hero__alphabet');
+    const alphbets = document.getElementsByClassName("hero__alphabet");
     for (let i = 0; i <= alphbets.length; i++) {
-      alphbets[i]?.addEventListener('animationend', function () {
-        alphbets[i].classList.remove('alphabet-animated');
+      alphbets[i]?.addEventListener("animationend", function () {
+        alphbets[i].classList.remove("alphabet-animated");
       });
 
-      alphbets[i]?.addEventListener('mouseover', function () {
-        alphbets[i].classList.add('alphabet-animated');
+      alphbets[i]?.addEventListener("mouseover", function () {
+        alphbets[i].classList.add("alphabet-animated");
       });
     }
   }, []);
@@ -24,7 +24,10 @@ const Hero = () => {
         <div className="hero__container">
           <div className="hero__intro-box">
             <p className="hero__intro-title">
-              <span className="hero__intro-line" data-aos="fade-down"></span>
+              <span
+                className="hero__intro-line"
+                data-aos="fade-down"
+              ></span>
               Hello, I am Jibran Arshad
             </p>
             <p className="hero__animated-alphabet-box">
@@ -40,67 +43,84 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                R
+                U
               </span>
               <span
                 className="hero__alphabet"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
-                O
+                L
               </span>
               <span
                 className="hero__alphabet"
                 data-aos="fade-up"
                 data-aos-delay="800"
               >
-                N
+                L
               </span>
+
+              <span
+                className="hero__alphabet hero__alphabet--space"
+                aria-hidden="true"
+              >
+                &nbsp;
+              </span>
+
               <span
                 className="hero__alphabet"
                 data-aos="fade-up"
                 data-aos-delay="1000"
               >
-                T
+                S
               </span>
               <span
                 className="hero__alphabet"
                 data-aos="fade-up"
                 data-aos-delay="1200"
               >
-                E
+                T
               </span>
               <span
                 className="hero__alphabet"
                 data-aos="fade-up"
                 data-aos-delay="1400"
               >
-                N
+                A
+              </span>
+              <span
+                className="hero__alphabet"
+                data-aos="fade-up"
+                data-aos-delay="1600"
+              >
+                C
               </span>
               <span
                 className="hero__alphabet hero__alphabet--last"
                 data-aos="fade-up"
-                data-aos-delay="1600"
+                data-aos-delay="1800"
               >
-                D
+                K
               </span>
+
               <span
                 className="hero__developer-text"
                 data-aos="zoom-out-down"
-                data-aos-delay="1800"
+                data-aos-delay="2000"
               >
                 <span className="hero__dev-text">Developer</span>
               </span>
             </p>
+
             <div
               className="hero__description"
               data-aos="fade"
               data-aos-delay="1800"
             >
               <p>
-                I'm a passionate and responsible{' '}
-                <span>front-end developer</span>, with 1 year of
-                experience. Skilled in developing highly responsive websites with elegant and efficient code.
+                I'm a passionate and responsible <span>full-stack developer</span>, with 1 year of experience. Skilled
+                in building dynamic and scalable web applications, developing both efficient back-end systems and
+                responsive front-end interfaces with clean, maintainable code.
               </p>
             </div>
 
@@ -123,8 +143,15 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="hero__image" data-aos="zoom-in" data-aos-delay="200">
-            <img src={Myself} alt="me" />
+          <div
+            className="hero__image"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src={Myself}
+              alt="me"
+            />
           </div>
         </div>
       </div>

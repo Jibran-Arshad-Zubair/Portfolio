@@ -4,7 +4,7 @@ import '../../styles/Works/Works.scss';
 
 import data from '../../data';
 
-// Importing child component
+
 import ProjectCard from '../ProjectCard';
 
 const Works = () => {
@@ -62,7 +62,7 @@ const Works = () => {
           <div className="works__grid">
             <div className="works__grid-container">
               {data.portfolio.projectCard.cards.map((content) => (
-                // Each project cards 
+               
                 <ProjectCard key={content.heading} cardContent={content} />
               ))}
             </div>

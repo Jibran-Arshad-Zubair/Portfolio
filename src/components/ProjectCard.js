@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Used 'react-collapsible' package for creating collapsible bars
+
 import Collapsible from 'react-collapsible';
 
 import '../styles/ProjectCard.scss';
