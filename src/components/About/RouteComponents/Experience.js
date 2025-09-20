@@ -2,8 +2,8 @@ import React from "react";
 
 import "../../../styles/About/Route/Experience.scss";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
   return (
