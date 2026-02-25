@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
+
 } from '@fortawesome/free-brands-svg-icons';
 
 import '../../styles/Header/Header.scss';

@@ -104,9 +104,8 @@ const About = () => {
                 </h2>
                 <p>
                   <span>1 year of experience.</span>
-                  <br />I have 1 year of experience in developing responsive and dynamic websites. I am currently
-                  working as an Associate Software Engineer at AXIS-Coding Solutions and have also gained valuable
-                  experience through internships at Devsinc and CodexCue.
+                  <br />I have more than 1 year of experience in developing responsive and dynamic websites. I am currently
+                  working as an Associate Software Engineer at AXIS-Coding Solutions and have worked on multiple projects.
                 </p>
               </Link>
             </div>

@@ -118,7 +118,7 @@ const Hero = () => {
               data-aos-delay="1800"
             >
               <p>
-                I'm a passionate and responsible <span>full-stack developer</span>, with 1 year of experience. Skilled
+                I'm a passionate and responsible <span>full-stack developer</span>, with more than 1 year of experience. Skilled
                 in building dynamic and scalable web applications, developing both efficient back-end systems and
                 responsive front-end interfaces with clean, maintainable code.
               </p>
