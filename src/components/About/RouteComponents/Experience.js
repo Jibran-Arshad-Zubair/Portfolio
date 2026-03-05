@@ -124,7 +124,7 @@ const Experience = () => {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className={`experience__box ${index > 2 ? "hide-on-desktop" : ""}`}
+                className="experience__box"
               >
                 <h2>{project.title}</h2>
                 <ul>
