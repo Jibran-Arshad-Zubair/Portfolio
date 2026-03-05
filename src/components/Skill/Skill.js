@@ -7,49 +7,55 @@ const Skill = () => {
 
   useEffect(() => {
     const container = '.tagcloud';
-    let radii;
 
+    const texts = [
+      'JavaScript',
+      'TypeScript',
+      'React.js',
+      'Next.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Bootstrap 5',
+      'RTK',
+      'Zustand',
+      'TanStack',
+      'Socket.io',
+      'REST API',
+      'Git',
+      'GitHub',
+      'GenAI',
+      'OpenAI Integration',
+      'Google Cloud',
+      'AWS',
+    ];
+
+    function radiusValue() {
+      return window.screen.width <= 778 ? 150 : 290;
+    }
+
+    const options = {
+      radius: radiusValue(),
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
+      keep: true,
+    };
+
+    // Destroy any previous instance to avoid duplicate tags on hot reload
+    const el = document.querySelector(container);
+    if (el) {
+      el.innerHTML = '';
+    }
+
+    TagCloud(container, texts, options);
+
+    // Cleanup on unmount
     return () => {
-      const texts = [
-        'JavaScript',
-        'TypeScript',
-        'React.js',
-        'Next.js',
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'Tailwind CSS',
-        'Bootstrap 5',
-        'RTK',
-        'Zustand',
-        'TanStack',
-        'Socket.io',
-        'REST API',
-        'Git',
-        'GitHub',
-        'GenAI',
-        'OpenAI Integration',
-        'Google Cloud',
-        'AWS',
-      ];
-
-      function radiusValue() {
-        if (window.screen.width <= 778) {
-          radii = 150;
-        } else {
-          radii = 290;
-        }
-        return radii;
+      const el = document.querySelector(container);
+      if (el) {
+        el.innerHTML = '';
       }
-
-      const options = {
-        radius: radiusValue(),
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        keep: true,
-      };
-
-      TagCloud(container, texts, options);
     };
   }, []);
 
@@ -71,8 +77,7 @@ const Skill = () => {
           <div className="skill__inner-container">
             <div className="skill__info">
               <div className="skill__details-container">
-                
-               
+
                 <div className="skill__details">
                   <h4>Frontend</h4>
                   <ul>
@@ -95,7 +100,6 @@ const Skill = () => {
                   </ul>
                 </div>
 
-               
                 <div className="skill__details">
                   <h4>Tools & Platforms</h4>
                   <ul>
@@ -105,7 +109,6 @@ const Skill = () => {
                   </ul>
                 </div>
 
-               
                 <div className="skill__details">
                   <h4>AI & Integrations</h4>
                   <ul>
@@ -116,7 +119,7 @@ const Skill = () => {
               </div>
             </div>
 
-            {/* 3D Text Cloud  */}
+            {/* 3D Text Cloud */}
             <div className="skill__cloud">
               <div className="tagcloud" data-aos="zoom-in-up" data-aos-offset="200"></div>
             </div>
