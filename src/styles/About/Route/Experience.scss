@@ -207,4 +207,10 @@
       }
     }
   }
+
+  @media screen and (min-width: 998px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
 }
