@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .experience {
   position: relative;
-  top: 0;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 
   &__container {
     position: relative;
-    top: 0;
     padding: 2em;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    min-height: 100vh;
   }
 
   &__header {
     font-family: 'RedWingBold';
+    position: sticky;
+    top: 2em;
+    flex-shrink: 0;
+    width: 45%;
 
     h2 {
       margin-top: 5%;
@@ -45,81 +48,98 @@
 
   &__description {
     position: relative;
-    padding-top: 10%;
-    margin-left: 5%;
+    width: 55%;
+    padding-top: 3em;        /* fixed px-based top padding — not % which changes with screen */
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em;
     color: #ffffff;
     font-weight: lighter;
-    max-width: 50vw;
-    padding-right: 5%;
     line-height: 1.5;
+    /* NO max-width, NO margin-left — let it fill its 55% naturally */
   }
 
   &__main-box {
-    max-height: 60vh;
-    overflow-y: scroll;
-    padding-left: 2em;
-    padding-right: 5%;
+    max-height: calc(100vh - 8em);   /* fills viewport minus padding, always correct on any screen */
+    overflow-y: auto;
+    padding-right: 1em;
+    padding-bottom: 3em;
   }
 
+  /* Scrollbar */
   &__main-box::-webkit-scrollbar {
-    height: 0.15em;
-    width: 0.15em;
+    width: 3px;
   }
 
-  /* Track */
   &__main-box::-webkit-scrollbar-track {
-    background: #ffffffb5;
+    background: #ffffff15;
+    border-radius: 10px;
   }
 
-  /* Handle */
   &__main-box::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  &__main-box::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
-  &__main-box::-webkit-scrollbar-thumb:vertical {
     background: #00ffff;
     border-radius: 10px;
   }
 
+  &__main-box::-webkit-scrollbar-thumb:hover {
+    background: #00cccc;
+  }
+
   &__box {
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ffffff15;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
     h2 {
       font-family: 'RedWingLight';
       letter-spacing: 0.1em;
+      color: #00ffff;
+      margin-bottom: 0.3em;
     }
+
     h3 {
       font-family: 'RedWingLight';
       font-weight: 400;
     }
 
     ul {
-      margin-top: 1em;
+      margin-top: 0.8em;
+      padding: 0;
+      list-style: none;
+
       p {
         margin-bottom: 0.5em;
+        color: #ffffff70;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
       }
 
       li {
         color: #00ffff;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.6em;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5em;
+
+        &::before {
+          content: '—';
+          color: #00ffff;
+          flex-shrink: 0;
+          margin-top: 1px;
+        }
+
         span {
           color: #ffffff;
         }
+
         span:empty {
           display: none;
         }
-      }
-    }
-  }
-
-  &__box:nth-child(3) {
-    ul {
-      li:nth-child(n + 3) {
-        display: none;
       }
     }
   }
@@ -128,14 +148,19 @@
     color: #00ffff;
   }
 
+  /* ── Tablet ── */
   @media screen and (max-width: 998px) {
     &__container {
       flex-direction: column;
-      justify-content: flex-start;
       align-items: flex-start;
+      min-height: unset;
     }
 
     &__header {
+      position: relative;
+      top: unset;
+      width: 100%;
+
       h2 {
         font-size: 5em;
         margin-left: 0;
@@ -147,23 +172,23 @@
       }
     }
 
+    &__description {
+      width: 100%;
+      padding: 1.5em 0 2em 0;
+    }
+
     &__main-box {
-      padding-left: 0;
+      max-height: none;       /* full expand — no scroll limit on tablet/mobile */
+      overflow-y: visible;
+      padding-right: 0;
     }
 
     &__box ul {
       list-style-position: inside;
     }
-
-    &__description {
-      padding-top: 3%;
-      margin-top: 4em;
-      margin-left: 0;
-      padding-right: 0;
-      max-width: 100%;
-    }
   }
 
+  /* ── Mobile ── */
   @media screen and (max-width: 698px) {
     &__header {
       h1 {
@@ -176,6 +201,7 @@
       h2 {
         font-size: 1.3em;
       }
+
       h3 {
         font-size: 1em;
       }

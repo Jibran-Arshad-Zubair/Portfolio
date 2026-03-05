@@ -82,9 +82,10 @@ const About = () => {
                   H<span>ello,</span>
                 </h2>
                 <p>
-                  I am <span>Jibran Arshad</span> <br /> I am a Web Developer passionate about turning ideas into
-                  interactive, user-friendly, and visually impactful websites and applications. My focus is on building
-                  responsive and dynamic websites with a strong attention to detail in coding.
+                  I am <span>Jibran Arshad</span> <br />A passionate and dedicated Full Stack Developer with over one
+                  year of experience in building dynamic and scalable web applications. I specialize in developing
+                  efficient back-end systems and responsive, user-friendly front-end interfaces while maintaining clean,
+                  well-structured, and maintainable code.
                 </p>
               </Link>
             </div>
@@ -104,8 +105,9 @@ const About = () => {
                 </h2>
                 <p>
                   <span>1 year of experience.</span>
-                  <br />I have more than 1 year of experience in developing responsive and dynamic websites. I am currently
-                  working as an Associate Software Engineer at AXIS-Coding Solutions and have worked on multiple projects.
+                  <br />I have more than 1 year of experience in developing responsive and dynamic websites. I am
+                  currently working as an Associate Software Engineer at AXIS-Coding Solutions and have worked on
+                  multiple projects.
                 </p>
               </Link>
             </div>

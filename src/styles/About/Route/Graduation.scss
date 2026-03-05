@@ -122,4 +122,23 @@
       }
     }
   }
+
+  .graduation__points {
+  margin-top: 2em;          // consistent spacing with your existing p
+  padding-left: 20px;       // keep bullets aligned nicely
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;         // same as your paragraph text
+  color: #ffffff;
+  line-height: 1.6;
+
+  li {
+    margin-bottom: 0.8em;   // small gap between items
+  }
+
+  // Optional: add a subtle custom bullet
+  li::marker {
+    color: #ffffff;         // same as text color
+    font-size: 1em;
+  }
+}
 }
