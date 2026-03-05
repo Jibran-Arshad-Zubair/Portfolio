@@ -104,10 +104,9 @@ const About = () => {
                   E<span>xperience</span>
                 </h2>
                 <p>
-                  <span>1 year of experience.</span>
+                  <span>1+ year of experience.</span>
                   <br />I have more than 1 year of experience in developing responsive and dynamic websites. I am
-                  currently working as an Associate Software Engineer at AXIS-Coding Solutions and have worked on
-                  multiple projects.
+                  currently working as an Associate Software Engineer at AXIS-Coding Solutions and have worked on various projects including ecommerce platforms, AI chatbot development, and web applications. 
                 </p>
               </Link>
             </div>
@@ -155,7 +154,7 @@ const About = () => {
                 <p>
                   <span>COMSATS Lahore</span>
                   <br />
-                  Recently I have completed my degree in BS Computer Engineering from COMSATS Lahore. Learned software
+                  Completed my degree in BS Computer Engineering from COMSATS Lahore. Learned software
                   development by doing projects, solving problems, and working with teams. Gained practical knowledge
                   that improved my technical skills and confidence in real work. Always eager to learn new technologies
                   and improve by working with my team members.

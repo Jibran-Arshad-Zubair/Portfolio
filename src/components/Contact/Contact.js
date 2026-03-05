@@ -97,9 +97,10 @@ const Contact = () => {
                         <h3 className="contact__info-title">Let's Connect</h3>
                         <div className="contact__info-details">
                             <ul>
-                                <li> <FontAwesomeIcon icon={faLocationDot} size="2x" /><p><span>Address:&nbsp;&nbsp;</span>Nishaat Colony, Lahore, Pakistan</p></li>
+
                                 <li> <FontAwesomeIcon icon={faPhone} size="2x" /><p><span>Phone:</span>&nbsp;&nbsp;(+92) 3066379087</p></li>
                                 <li> <FontAwesomeIcon icon={faEnvelope} size="2x" /><p><span>Email:&nbsp;&nbsp;</span>ranajibranarshad@gmail.com</p></li>
+                                                                <li> <FontAwesomeIcon icon={faLocationDot} size="2x" /><p><span>Address:&nbsp;&nbsp;</span>Saddar Cantt, Lahore, Pakistan</p></li>
                             </ul>
                         </div>
                         <div className="contact__social">

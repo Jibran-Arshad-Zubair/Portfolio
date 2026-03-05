@@ -12,9 +12,9 @@ const Intro = () => {
                     </div>
                     <div className="about-intro__description">
                         <p data-aos='fade-right' >I am <span>Jibran Arshad....</span></p>
-                        <p data-aos='fade-right' data-aos-delay='200'>I enjoy building websites and always enthusiastic about creating new front-end features.</p>
-                        <p data-aos='fade-right' data-aos-delay='400'>Passionate front-end Developer with 1 year of experience in developing highly adaptive and responsive websites using React, Bootstrap and Tailwind CSS.</p>
-                        <p data-aos='fade-right' data-aos-delay='600'>I also have basic understanding of server side development using Node.js, Express.js and MongoDB.</p>
+                        <p data-aos='fade-right' data-aos-delay='200'>I enjoy building websites and always look forward to creating new front-end features.</p>
+                        <p data-aos='fade-right' data-aos-delay='400'>Passionate front-end Developer with more than 1 year of experience in developing highly adaptive and responsive websites using React, Bootstrap and Tailwind CSS, Material UIn DaisyUI.</p>
+                        <p data-aos='fade-right' data-aos-delay='600'>I also have a good knowledge and experience in server side development using Node.js and Express.</p>
                       
 
                         <div className="about-intro__emoji">:&nbsp;)</div>
