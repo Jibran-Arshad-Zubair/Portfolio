@@ -27,6 +27,15 @@ export const config = {
           buttonLink: "https://www.creyeti.com.au/",
           buttonText: "CHECK OUT",
         },
+
+          {
+          heading: "LiftSol",
+            description:
+            "Contributed to the development of LiftSol, a web platform  where users can explore and enroll in gyms across Pakistan, access gym services, and manage memberships. Designed dashboards for Gym Owners and Admins to streamline operations. And admin , partner dashboard for managing gyms, users, and services. The platform aims to connect fitness enthusiasts with local gyms and promote a healthier lifestyle.",
+          animationDelay: "300",
+            buttonLink: "https://liftsol.pk/",
+          buttonText: "CHECK OUT",
+        },
         {
           heading: "ScoutsCapital",
           description:
@@ -54,43 +63,28 @@ export const config = {
           buttonText: "CHECK OUT",
         },
 
-         {
-          heading: "LiftSol",
-            description:
-            "Contributed to the development of LiftSol, a web platform  where users can explore and enroll in gyms across Pakistan, access gym services, and manage memberships. Designed dashboards for Gym Owners and Admins to streamline operations. And admin , partner dashboard for managing gyms, users, and services. The platform aims to connect fitness enthusiasts with local gyms and promote a healthier lifestyle.",
-          animationDelay: "300",
-          buttonLink: "#",
-        },
-
-        {
-          heading: "AI-Agent-Calling",
-          description:
-            "Contributed to the development of AI calling system where each business has its own agent to handle calls and take orders automatically. Integrated ElevenLabs API for natural voice and developed tools for managing campaigns and leads.",
-          animationDelay: "500",
-          buttonLink: "#",
-          // buttonText: "CHECK OUT",
-        },
-
         {
           heading: "E-Learning Platform",
           description:
             "Developing a personal E-learning platform where students can purchase and access teacher-created courses. Includes teacher, student, and admin dashboards along with an AI chatbot for learning assistance. Designed to provide a seamless learning experience with personalized support and easy course management.",
           animationDelay: "900",
-          buttonLink: "#",
-          // buttonText: "CHECK OUT",
+            buttonLink: "https://e-learning-web-chi.vercel.app/",
+          buttonText: "CHECK OUT",
         },
+       
         {
-          heading: "AI Chatbot Development",
+          heading: "Marhamat",
           description:
-            "Created an AI-powered chatbot using OpenAI models integrated with LangChain to enable intelligent, context-driven conversations. Designed to handle queries smoothly and provide accurate responses. ",
+            "Contributed to the development of Marhamat, a compassionate charity fundraising platform dedicated to supporting orphans, vulnerable children, and struggling families across Pakistan. The platform enables donors to easily contribute towards food, education, medical care, and shelter for those in desperate need. Built with Next.js and modern web technologies, Marhamat provides a seamless, transparent, and user-friendly experience to connect kind-hearted donors with meaningful causes.",
           animationDelay: "1100",
           buttonLink: "#",
           // buttonText: "CHECK OUT",
         },
-        {
-          heading: "Library Management System",
+
+         {
+          heading: "AI Chatbot Development",
           description:
-            "Developed a Library Management System using the MERN stack to streamline library operations.Designed to improve efficiency and provide a user-friendly interface for both librarians and patrons.",
+            "Created an AI-powered chatbot using OpenAI models integrated with LangChain to enable intelligent, context-driven conversations. Designed to handle queries smoothly and provide accurate responses. ",
           animationDelay: "1100",
           buttonLink: "#",
           // buttonText: "CHECK OUT",
